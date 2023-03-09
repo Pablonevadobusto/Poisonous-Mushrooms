@@ -12,7 +12,7 @@ from sklearn import preprocessing
 
 ## Loading the ann model
 ### Opening a file with Pickle (Logistic Regression model was saved as Pickle (binary) format)
-with open(r'C:\Users\User\Pablo\Data Science Bootcamp\Phase 2\Assignments\Final Project\Supervised ML\Poisonous Mushrooms\Poisonous_Mushroom_model.pkl', 'rb') as file:
+with open('Poisonous_Mushroom_model.pkl', 'rb') as file:
           model = pickle.load(file)
 
 ## load the copy of the dataset
@@ -32,7 +32,7 @@ st.write('''
 #st.sidebar.header('User Input Features')
 
 ## add image
-image = Image.open(r'C:\Users\User\Pablo\Data Science Bootcamp\Phase 2\Assignments\Final Project\Supervised ML\Poisonous Mushrooms\mushroom.jpg')
+image = Image.open('mushroom.jpg')
 st.image(image, width=800)
 
 
