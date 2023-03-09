@@ -32,7 +32,7 @@ st.write('''
 #st.sidebar.header('User Input Features')
 
 ## add image
-image = Image.open('mushroom.jpg')
+image = Image.open('images\mushroom.jpg')
 st.image(image, width=800)
 
 
